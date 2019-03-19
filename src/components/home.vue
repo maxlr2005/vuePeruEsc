@@ -14,7 +14,7 @@ export default {
       return {
         items: [
           {
-            src: 'https://raw.githubusercontent.com/maxlr2005/vuePeruEsc/master/src/assets/portada/01.jpeg'
+            src: '@/assets/portada/01.jpeg'
           },
           {
             src: 'https://raw.githubusercontent.com/maxlr2005/vuePeruEsc/master/src/assets/portada/02.jpeg'
