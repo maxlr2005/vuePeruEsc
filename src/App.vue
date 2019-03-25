@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import banner from './components/homepage/banner'
 import HelloWorld from './components/HelloWorld'
 import home from './components/home'
 
