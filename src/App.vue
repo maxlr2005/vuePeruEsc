@@ -1,38 +1,40 @@
 <template>
   <v-app>
-    <v-toolbar app fixed>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Peru Escape logo</span>
-      </v-toolbar-title>
+    <v-toolbar app fixed prominent>
+    <v-img
+      :src="require('./assets/Logo.png')"
+      class="my-3"
+      contain
+      height="60"
+      ></v-img>
       <v-spacer></v-spacer>
-
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
+      <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn flat color="primary" active>Home</v-btn>
+      <v-btn flat color="primary">About Us</v-btn>
+      <v-btn flat color="primary">Our Properties</v-btn>
+      <v-btn flat color="primary">Locations</v-btn>
+      <v-btn flat color="primary">Blog</v-btn>
+      <v-btn flat color="primary">EN
+        <v-img
+        :src="require('./assets/en.png')"
+        >
+      </v-img>
       </v-btn>
+    </v-toolbar-items>
     </v-toolbar>
-
     <v-content>
-  <!--  <HelloWorld/> -->
       <home/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import banner from './components/homepage/banner'
-import HelloWorld from './components/HelloWorld'
 import home from './components/home'
-
 export default {
   name: 'App',
   components:
   {
-    HelloWorld,
-    home
+    home,
   },
   data () {
     return {

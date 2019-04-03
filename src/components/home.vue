@@ -1,7 +1,12 @@
 <template>
-    <v-content>
-      <banner/>
-    </v-content>
+<div>
+<banner/>
+<parallax01/>
+<v-img
+:src="require('../assets/Logo.png')"
+height="120"
+width="auto"></v-img>
+</div>
 </template>
 
 <script>

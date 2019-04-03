@@ -22,13 +22,10 @@ export default {
 // ### Se tiene que cambiar esto por las fotos de portada original, hay que pedirselas a los chicos de marketing ###
         items: [
           {
-            src: "../../assets/portada/p1.jpeg"
+            src: require('../../assets/portada/p1.jpeg')
           },
           {
-            src: "../../assets/portada/p2.jpeg"
-          },
-          {
-            src: 'https://raw.githubusercontent.com/maxlr2005/vuePeruEsc/master/src/assets/portada/03.png'
+            src: require('../../assets/portada/p2.jpeg')
           }
         ]
       }
@@ -36,7 +33,7 @@ export default {
   }
 </script>
 // ################################# STYLE ##################################
-// ###########################################################################
+// ##########################################################################
 <style>
 
 </style>
